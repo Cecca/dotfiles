@@ -1,0 +1,15 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+[custom.time-tracker]
+when = true
+command = ''' sqlite3 ~/.time-tracker.db "select task || '@' || project from  record where end is null;" '''
+style = 'cyan'
+shell = ['bash']
+
+[custom.papers-to-read]
+when = ''' test "$HOME" = "$PWD" '''
+command = ''' ls -1 ~/Dropbox/Articoli/Reading/ | wc -l '''
+style = 'bold red'
+format = '[$symbol($output)]($style) papers to read '
+shell = ['bash']
+
