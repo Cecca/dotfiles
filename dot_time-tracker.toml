@@ -1,0 +1,36 @@
+projects = [
+    "workshop",
+    "multi-join",
+    "fairness-reading-group",
+    "matroid-clustering",
+    "big-data-computing",
+    "time-series-classification",
+    "temporal-keys",
+    "expected-force",
+    "diadem",
+    "review",
+    "motifs",
+    "topk",
+    "graph-motifs",
+    "other",
+    "literature",
+    "capstone",
+    "macaco",
+    "temporal-index",
+    "dataviz",
+    "thesis",
+    "temporal-graphs-benchmark"
+]
+
+tasks = [
+    "read",
+    "write",
+    "mail",
+    "meet",
+    "code",
+    "experiment",
+    "manage",
+    "prepare",
+    "lecture"
+]
+
