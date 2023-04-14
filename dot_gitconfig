@@ -1,0 +1,28 @@
+[user]
+	email = matteo.ceccarello@gmail.com
+	name = Matteo Ceccarello
+	signingkey = 0850A689
+[push]
+	default = simple
+[core]
+	attributesfile = /home/matteo/.gitattributes
+[filter "dropoutput_ipynb"]
+	clean = /home/matteo/bin/ipynb_output_filter.py
+	smudge = cat
+
+[filter "stripoutput"]
+    clean = "/home/matteo/bin/nbstripout"
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[init]
+	defaultBranch = main
+[credential "https://git.overleaf.com"]
+	username = mceccarello@unibz.it
+	helper = cache
+[pull]
+	rebase = false
+[credential]
+	helper = cache
